@@ -1,0 +1,18 @@
+/* 商品详情 */
+.product-title {
+display: flex;
+height: 88rpx;
+flex-wrap: wrap;
+}
+.product-banner{
+	background-color: pink;
+	width: 750rpx;
+	height: 650rpx;
+}
+.product-detail{
+	display: flex;
+}
+.btn-share{
+	width: 164rpx;
+	height: 60rpx;
+}

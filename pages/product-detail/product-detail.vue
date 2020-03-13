@@ -1,36 +1,46 @@
 <template>
 	<view>
-		<swiper class="swiper" :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" indicator-active-color="#008800">
-					<block v-for="(data, index) in swiperImges" :key="index">
-						<swiper-item>
-							<view class="swiper-item">
-									<image
-										:src="data.pic_url"
-										class="banner"
-										style="width: 718rpx;
-		                 height: 332rpx;"
-										mode="aspectFit"
-									></image>
-							</view>
-						</swiper-item>
-					</block>
-				</swiper>
+		<view class="product-bar">
+			<button></button>
+			<button></button>
+		</view>
+		<!-- 商品详情 -->
+		<view class="product-banner"><image src="" style="width: 750rpx;height: 650rpx;" mode="aspectFit"></image></view>
+		<view class="product-detail">
+			<view>
+				<text style="color: #e33944;font-size: 24rpx;">¥</text>
+				<text style="color: #e33944;">488</text>
+				<text style="color: #A1A4A5;font-size: 28rpx;">¥588</text>
+			</view>
+			<view>
+				<text style="color: #A1A4A5;font-size: 28rpx;">已售277</text>
+				<text style="color: #A1A4A5;font-size: 28rpx;">库存59</text>
+			</view>
+		</view>
+
+		<view class="product-title">
+			<text
+				style="font-size: 30rpx;
+	color: #333333;"
+			>
+				一年级上册第一课《秋天》课文配套书法尺学习尺子
+			</text>
+			<button class="btn-share" size="mini">分享</button>
+		</view>
+		<!-- 优惠券 -->
+		<view></view>
 	</view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				swiperImages:[]
-			}
-		},
-		methods: {
-			
-		}
-	}
+export default {
+	data() {
+		return {
+			swiperImages: []
+		};
+	},
+	methods: {}
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
