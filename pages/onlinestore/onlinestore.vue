@@ -1,6 +1,9 @@
 <template>
 	<view class="container">
-		<view class="search"></view>
+		<view class="top_title">
+			<navigator url=""><image src="../../static/index/gwc.png" mode="" style="width: 40rpx;height: 40rpx;"></image></navigator>
+			<navigator url=""><image src="../../static/index/gwc.png" mode="" style="width: 40rpx;height: 40rpx;"></image></navigator>
+		</view>
 		<view class="recommend-header">
 			<view class="index-header">
 				<text class="address" v-if="leftWords">{{ leftWords }}</text>
@@ -13,13 +16,15 @@
 					<text>{{ rightWords }}</text>
 				</view>
 			</view>
-
+			<!-- tabbar -->
 			<view class="uni-tab-bar">
-				<scroll-view scroll-x class="uni-swiper-tab" style="height: 100rpx;">
+				<scroll-view scroll-x class="uni-swiper-tab">
 					<block v-for="(tabBar, index) in tabBars" :key="index">
-						<view class="swiper-tab-list" :class="{ active: tabIndex == index }" @tap="toggleTab(index)">
-							{{ tabBar.name }}
-							<view class="swiper-tab-line"></view>
+						<view class="swiper-tab-item">
+							<view class="swiper-tab-list" :class="{ active: tabIndex == index }" @tap="toggleTab(index)">
+								{{ tabBar.name }}
+								<view class="swiper-tab-line"></view>
+							</view>
 						</view>
 					</block>
 				</scroll-view>
@@ -28,50 +33,59 @@
 			<view class="uni-tab-content">
 				<swiper :current="tabIndex" @change="tabChange">
 					<swiper-item v-for="(content, index) in contentList" :key="index">
-						<view class="swiper-item">{{ content }}</view>
+						<view class="swiper-item">
+							<!-- 轮播 -->
+							<swiper class="swiper" :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000"
+							 indicator-active-color="#008800">
+								<block v-for="(data, index) in swiperImges" :key="index">
+									<swiper-item>
+										<view class="swiper-item">
+											<navigator :url="data.to_url" open-type="navigate">
+												<image :src="data.pic_url" class="banner" style="width: 718rpx;height: 332rpx;" mode="aspectFit"></image>
+											</navigator>
+										</view>
+									</swiper-item>
+								</block>
+							</swiper>
+						
+						</view>
 					</swiper-item>
 				</swiper>
 			</view>
-			<!-- 轮播 -->
-			<swiper class="swiper" :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" indicator-active-color="#008800">
-				<block v-for="(data, index) in swiperImges" :key="index">
-					<swiper-item>
-						<view class="swiper-item">
-							<navigator :url="data.to_url" open-type="navigate">
-								<image
-									:src="data.pic_url"
-									class="banner"
-									style="width: 718rpx;
-	height: 332rpx;"
-									mode="aspectFit"
-								></image>
-							</navigator>
-						</view>
-					</swiper-item>
-				</block>
-			</swiper>
+			<!-- 根据tab不同加载不同内容 -->
+
 			<!-- 新品上市 -->
 			<view class="new-goods">
 				<image src="../../static/onlineStore/xpss.png" style="width:182rpx;height: 78rpx;" mode="aspectFit"></image>
 				<view class="recommend">推荐</view>
+				<view class="recommend-product" v-for="(item,index) in productList .slice(0,1)" :key="index">
+					<navigator url="">
+						<text style="font-size: 28rpx;">{{item.title}}</text>
+					</navigator>
+				</view>
 			</view>
 			<!-- 广告链接 -->
 			<navigator url="">
-				<view class="adversity"><image src="../../static/onlineStore/gg@2x.png" mode="aspectFit" style="width: 722rpx;height: 196rpx;"></image></view>
+				<view class="adversity">
+					<image src="../../static/onlineStore/gg@2x.png" mode="aspectFit" style="width: 722rpx;height: 196rpx;"></image>
+				</view>
 			</navigator>
 			<!-- 限时秒杀 -->
 			<view class="limitedTime">
 				<image src="../../static/onlineStore/xsms.png" style="width: 150rpx;height: 98rpx;" mode="aspectFit"></image>
-				<text style="font-size: 28rpx;color: #e02020;">时间仅剩</text>
-				<uni-countdown :hour="1" :minute="12" :second="40"></uni-countdown>
+				<view class="limitedTime"><text style="font-size: 28rpx;color: #e02020;">时间仅剩</text>
+					<uni-countdown :hour="1" :minute="12" :second="40" :showDay="false"></uni-countdown>
+				</view>
 			</view>
 		</view>
 		<!-- 商品推荐 -->
 		<view class="recommend-banner">
-			<scroll-view scroll-x="true">
-				<view class="goods-box" v-for="item in goodslist" :key="index">
-					<navigator><image src="" style="width:262rpx ;height: 244rpx;" mode="aspectFit"></image></navigator>
-					<view class="goods-price">¥{{ item.price }}</view>
+			<scroll-view scroll-x="true" show-scrollbar="true">
+				<view class="goods-box" v-for="item in productList" :key="index">
+					<navigator>
+						<image src="" style="width:262rpx ;height: 244rpx;" mode="aspectFit"></image>
+					</navigator>
+					<view class="goods-price">¥{{ item.originalPrice }}</view>
 				</view>
 			</scroll-view>
 		</view>
@@ -82,32 +96,39 @@
 				<cover-image src="" style="width:750rpx ;height: 220rpx;"></cover-image>
 			</view>
 		</navigator>
-		<view class="banner-title"><text style="font-size:48rpx;color:#3FAE2A ;">将成团</text></view>
+		<view class="banner-title"><text style="font-size:48rpx;color:#3FAE2A ;">——将成团——</text></view>
 		<!-- 商品推荐 -->
 		<view class="recommend-footer">
 			<view class="recommend-list">
-				<view class="uni-product" v-for="(item, index) in productList" :key="index">
-					<view class="image-view">
-						<!-- <image v-if="renderImage" class="uni-product-image" :src="item.image"></image></view> -->
-						<image src="" style="width:220rpx ;height: 200rpx;" mode="aspectFit"></image>
-					</view>
-					<view class="goods-detail">
-						<view class="uni-product-title">{{ item.title }}</view>
-						<view class="uni-product-price">
-							<view style="font-size:28rpx ;">
-								团购价：
-								<text class="goods-price" style="font-size: 32rpx;">￥{{ item.originalPrice }}</text>
+
+				<view v-for="(item, index) in productList" :key="index">
+					<navigator url="">
+						<view class="uni-product">
+							<view class="image-view">
+								<!-- <image v-if="renderImage" class="uni-product-image" :src="item.image"></image></view> -->
+								<image src="" style="width:220rpx ;height: 200rpx;" mode="aspectFit"></image>
 							</view>
-							<view style="font-size: 28rpx;">
-								团购价：
-								<text class="goods-price" style="font-size: 32rpx;">￥{{ item.teamPrice }}</text>
+							<view class="goods-detail">
+								<view class="uni-product-title">{{ item.title }}</view>
+								<view class="uni-product-price">
+									<view style="font-size:28rpx ;">
+										团购价:
+										<text class="goods-price" style="font-size: 32rpx;">￥{{ item.originalPrice }}</text>
+									</view>
+									<view style="font-size: 28rpx;">
+										团购价:
+										<text class="goods-price" style="font-size: 32rpx;">￥{{ item.teamPrice }}</text>
+									</view>
+								</view>
 							</view>
 						</view>
-					</view>
+					</navigator>
 				</view>
 			</view>
 			<!-- 为您推荐 -->
-			<view class="recommend-image"><image src="../../static/onlineStore/wntj.png" style="width: 224rpx;height: 30rpx;"></image></view>
+			<view class="recommend-image">
+				<image src="../../static/onlineStore/wntj.png" style="width: 224rpx;height: 30rpx;"></image>
+			</view>
 			<view class="recommend-ruler">
 				<view class="uni-ruler" v-for="(item, index) in productList" :key="index">
 					<navigator url="">
@@ -126,127 +147,126 @@
 	</view>
 </template>
 <script>
-import uniCountdown from '@/components/uni-countdown/uni-countdown.vue';
-export default {
-	data() {
-		return {
-			tabindex: 1,
-			tabIndex: 0, //选中标签栏的序列
-			contentList: ['分类', '分类', '分类', '分类', '分类'],
-			swiperImges: [],
-			// productList: [],
-			// recommendList:[],
-			recommendList:[{title:'1'},{title:'2'}],
-			productList: [
-				{
-					title: '商品标题商品标题商品标题商品标题商品标题',
-					originalPrice: '320',
-					teamPrice: '620'
-				},
-				{
-					title: '商品标题商品标题商品标题商品标题商品标题',
-					originalPrice: '320',
-					teamPrice: '620'
-				},
-				{
-					title: '商品标题商品标题商品标题商品标题商品标题',
-					originalPrice: '320',
-					teamPrice: '620'
-				}
-			],
-			renderImage: false,
-			goodslist: [
-				{
-					price: '250.00'
-				},
-				{
-					price: '250.00'
-				},
-				{
-					price: '250.00'
-				}
-			],
-			tabBars: [
-				{
-					name: '分类',
-					id: 'guanzhu'
-				},
-				{
-					name: '分类',
-					id: 'tuijian'
-				},
-				{
-					name: '分类',
-					id: 'redian'
-				},
-				{
-					name: '分类',
-					id: 'tiyu'
-				},
-				{
-					name: '分类',
-					id: 'caijing'
-				}
-			],
-			swiperHeight: 0
-		};
-	},
-	components: { uniCountdown },
-	mounted() {
-		// 换地址
-		uni.request({
-			url: 'https://kxsx.kaifadanao.cn/api/index/index',
-			method: 'POST',
-			data: {},
-			header: {
-				'Content-Type': 'application/x-www-form-urlencoded'
-			},
-			success: res => {
-				if (res.data.status == 1) {
-					//轮播图片数据
-					this.swiperImges = res.data.data.banner;
-					//在线教学数据
-					this.onlineTeaching = res.data.data.smodel;
-				}
-			},
-			fail: () => {}
-		});
-		//请求
-		// uni.request({
-		//                     url: 'http://localhost:3000/goods',
-		//                     success: (res) => {
-		//                         console.log(res.data);
-		//                         this.productList = res.data.goodslist;
-		//                     }
-		//                 });
-	},
-	methods: {
-		toggleTab(index) {
-			console.log(index);
-			this.tabIndex = index;
+	import uniCountdown from '@/components/uni-countdown/uni-countdown.vue';
+	export default {
+		data() {
+			return {
+				tabindex: 1,
+				tabIndex: 0, //选中标签栏的序列
+				contentList: ['分类', '分类', '分类', '分类', '分类'],
+				swiperImges: [],
+				// productList: [],
+				// recommendList:[],
+				recommendList: [{
+					title: '1'
+				}, {
+					title: '2'
+				}],
+				productList: [{
+						title: '商品标题商品标题商品标题商品标题商品标题',
+						originalPrice: '320',
+						teamPrice: '620',
+						name: '书法尺',
+						describtion: '练习书法常备用品'
+					},
+					{
+						title: '商品标题商品标题商品标题商品标题商品标题',
+						originalPrice: '320',
+						teamPrice: '620',
+						name: '书法尺',
+						describtion: '练习书法常备用品'
+					},
+					{
+						title: '商品标题商品标题商品标题商品标题商品标题',
+						originalPrice: '320',
+						teamPrice: '620',
+						name: '书法尺',
+						describtion: '练习书法常备用品'
+					},
+				],
+				renderImage: false,
+				tabBars: [{
+						name: '分类',
+						id: 'guanzhu'
+					},
+					{
+						name: '分类',
+						id: 'tuijian'
+					},
+					{
+						name: '分类',
+						id: 'redian'
+					},
+					{
+						name: '分类',
+						id: 'tiyu'
+					},
+					{
+						name: '分类',
+						id: 'caijing'
+					}
+				],
+				swiperHeight: 0
+			};
 		},
-		tabChange(e) {
-			console.log(e.detail);
-			const tabIndex = e.detail.current;
-			this.tabIndex = tabIndex;
+		components: {
+			uniCountdown
 		},
-		getList() {
+		mounted() {
+			// 换地址
 			uni.request({
-				url: 'http://localhost:3000/goods',
+				url: 'https://kxsx.kaifadanao.cn/api/index/index',
+				method: 'POST',
+				data: {},
+				header: {
+					'Content-Type': 'application/x-www-form-urlencoded'
+				},
 				success: res => {
-					console.log(res.data);
-					this.productList = res.data.goodslist;
-				}
+					if (res.data.status == 1) {
+						//轮播图片数据
+						this.swiperImges = res.data.data.banner;
+						//在线教学数据
+						this.onlineTeaching = res.data.data.smodel;
+					}
+				},
+				fail: () => {}
 			});
+			//请求
+			// uni.request({
+			//                     url: 'http://localhost:3000/goods',
+			//                     success: (res) => {
+			//                         console.log(res.data);
+			//                         this.productList = res.data.goodslist;
+			//                     }
+			//                 });
 		},
-		onLoad() {
-			this.getList();
-			this.renderImage = true;
+		methods: {
+			toggleTab(index) {
+				console.log(index);
+				this.tabIndex = index;
+			},
+			tabChange(e) {
+				console.log(e.detail);
+				const tabIndex = e.detail.current;
+				this.tabIndex = tabIndex;
+			},
+			getList() {
+				uni.request({
+					url: 'http://localhost:3000/goods',
+					success: res => {
+						console.log(res.data);
+						this.productList = res.data.goodslist;
+					}
+				});
+			},
+			onLoad() {
+				this.getList();
+				this.renderImage = true;
+			}
 		}
-	}
-};
+	};
 </script>
 
 <style>
-@import './onlinestore.css';
+	@import './onlinestore.css';
 </style>

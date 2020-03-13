@@ -59,22 +59,9 @@
 		{
 			"path": "pages/onlinestore/onlinestore",
 			"style": {
+				"navigationStyle": "custom",
 				"app-plus": {
-					"titleNView": {
-						"searchInput": {
-							"align": "left",
-							"backgroundColor": "#efefef",
-							"borderRadius": "30px",
-							"placeholder": "一年级上册"
-						},
-						"buttons": {
-
-							"text": "地图",
-							"fontSize": "16",
-							"color": "#fff"
-
-						}
-					}
+					"titleNView": false
 				}
 			}
 		},

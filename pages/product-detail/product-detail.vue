@@ -7,7 +7,7 @@
 		<!-- 商品详情 -->
 		<view class="product-banner"><image src="" style="width: 750rpx;height: 650rpx;" mode="aspectFit"></image></view>
 		<view class="product-detail">
-			<view>
+			<view class="beij">
 				<text style="color: #e33944;font-size: 24rpx;">¥</text>
 				<text style="color: #e33944;">488</text>
 				<text style="color: #A1A4A5;font-size: 28rpx;">¥588</text>

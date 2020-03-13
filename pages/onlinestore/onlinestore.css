@@ -1,4 +1,14 @@
-
+/deep/.uni-scroll-view::-webkit-scrollbar {
+		/* 隐藏滚动条，但依旧具备可以滚动的功能 */
+		display: none
+	}
+.top_title{
+	display: flex;
+	flex-direction: row;
+	height: 50rpx;
+	justify-content: space-between;
+	padding: 10rpx 20rpx;
+}
 .recommend-header{
 	margin-left: 16rpx;
 	margin-right: 16rpx;
@@ -13,33 +23,23 @@
 .new-goods {
 	height: 194rpx;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-
 }
 
 .limitedTime {
 	height: 194rpx;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	
+		justify-content: space-between;
 }
 
 .recommend-banner {
 	height: 358rpx;
 }
-
 .swiper-item {
 	width: 718rpx;
 	height: 332rpx;
 }
-
-.swiper-tab-list {
-	color: #969696;
-	font-size: 16px;
-}
-
 .uni-tab-bar {
 	margin: 0 28rpx;
 }
@@ -47,9 +47,17 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	background-color: yellow;
 }
 .swiper-tab-list{
-	width: 100rpx;
+	color: #969696;
+	font-size: 16px;
+}
+.swiper-tab-item{
+	display: flex;
+	flex-direction: row;
+	height: 50rpx;
+	background-color: pink;
 }
 .uni-tab-bar .active {
 	color: #343434;
@@ -61,7 +69,9 @@
 .adversity {
 	text-align: center;
 }
-
+.recommend-product{
+	width:400rpx
+}
 .recommend-banner {
 	width: 100%;
 	overflow: hidden;
@@ -85,7 +95,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-right: ;
+	padding-right: 20rpx;
 }
 .goods-detail {
 	padding-left:18rpx;
