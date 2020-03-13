@@ -7,7 +7,7 @@
 		<!-- 一些功能 -->
 		<view class="module">
 			<view class="module_item">
-				<navigator url="">
+				<navigator url="../online_Teach/onlineTeach">
 					<view class="itemcont">
 						<image class="icon" src="../../static/freeTeaching/tongbuxuexi.png" mode="widthFix"></image>
 					</view>
@@ -23,7 +23,7 @@
 				</navigator>
 			</view>
 			<view class="module_item">
-				<navigator url="">
+				<navigator url="pen/pen">
 					<view class="itemcont">
 						<image class="icon" src="../../static/freeTeaching/bihua.png" mode="widthFix"></image>
 					</view>
@@ -31,7 +31,7 @@
 				</navigator>
 			</view>
 			<view class="module_item">
-				<navigator url="">
+				<navigator url="sitting-posture/setting-posture">
 					<view class="itemcont">
 						<image class="icon" src="../../static/freeTeaching/zuozi.png" mode="widthFix"></image>
 					</view>
@@ -39,7 +39,7 @@
 				</navigator>
 			</view>
 			<view class="module_item">
-				<navigator url="">
+				<navigator url="text-decoding/text-decoding">
 					<view class="itemcont">
 						<image class="icon" src="../../static/freeTeaching/jiema.png" mode="widthFix"></image>
 					</view>
@@ -47,7 +47,7 @@
 				</navigator>
 			</view>
 			<view class="module_item">
-				<navigator url="">
+				<navigator url="expanded-teach/expanded-teach">
 					<view class="itemcont">
 						<image class="icon" src="../../static/freeTeaching/kuozhan.png" mode="widthFix"></image>
 					</view>
@@ -55,7 +55,7 @@
 				</navigator>
 			</view>
 			<view class="module_item">
-				<navigator url="">
+				<navigator url="../ruler-buy/ruler-buy">
 					<view class="itemcont">
 						<image class="icon" src="../../static/freeTeaching/goumai.png" mode="widthFix"></image>
 					</view>

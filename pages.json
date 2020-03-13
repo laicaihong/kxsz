@@ -68,11 +68,11 @@
 							"placeholder": "一年级上册"
 						},
 						"buttons": {
-							
-								"text": "地图",
-								"fontSize": "16",
-								"color": "#fff"
-							
+
+							"text": "地图",
+							"fontSize": "16",
+							"color": "#fff"
+
 						}
 					}
 				}
@@ -221,7 +221,7 @@
 		{
 			"path": "pages/hncjiaoxue_mulu/hncjiaoxue_mulu",
 			"style": {
-				"navigationBarTitleText": "功能尺适用教学",
+				"navigationBarTitleText": "功能尺使用教学",
 				"app-plus": {
 					"titleNView": {
 						"titleSize": "28rpx"
@@ -355,15 +355,86 @@
 			"style": {
 				"navigationBarTitleText": "拼团详情"
 			}
+		}, {
+			"path": "pages/freeTeaching/pen/pen",
+			"style": {
+				"navigationBarTitleText": "笔画+思政",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "28rpx"
+					}
+				}
+			}
+		}, {
+			"path": "pages/freeTeaching/sitting-posture/setting-posture",
+			"style": {
+				"navigationBarTitleText": "坐姿握笔",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "28rpx"
+					}
+				}
+			}
+		}, {
+			"path": "pages/freeTeaching/text-decoding/text-decoding",
+			"style": {
+				"navigationBarTextStyle": "文字解码",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "28rpx"
+					}
+				}
+			}
+		}, {
+			"path": "pages/freeTeaching/expanded-teach/expanded-teach",
+			"style": {
+				"navigationBarTitleText": "扩展教学",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "28rpx"
+					}
+				}
+			}
+		}, {
+			"path": "pages/ruler-buy/ruler-buy",
+			"style": {
+				"navigationBarTitleText": "书法尺购买",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "28rpx"
+					}
+				}
+			}
+
 		}
-	],
+	    ,{
+            "path" : "pages/jifen-shop/jifen-shop",
+            "style" : {
+							"navigationBarTitleText":"积分商城",
+							"navigationBarBackgroundColor":"#FFFFFF",
+							"navigationBarTextStyle":"black",
+							"app-plus":{
+								
+							}
+						}
+        }
+        ,{
+            "path" : "pages/product-detail/product-detail",
+           "style": {
+           	"navigationStyle": "custom",
+           	"app-plus": {
+           		"titleNView": false
+           	}
+           }
+        }
+    ],
 
 
 	"globalStyle": {
 		// "enablePullDownRefresh": true,
 		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#FFFFFF",
-		"navigationBarTextStyle": "black"
+		"navigationBarBackgroundColor": "#008800",
+		"navigationBarTextStyle": "#ffffff"
 	},
 	"tabBar": {
 		"selectedColor": "#008800",

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的特权",
+  "navigationBarBackgroundColor": "#008800",
+  "navigationBarTextStyle": "white",
+  "titleNView": {
+    "titleSize": "28rpx"
+  },
+  "usingComponents": {}
+}

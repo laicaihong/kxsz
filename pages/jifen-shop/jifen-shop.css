@@ -1,0 +1,51 @@
+.banner{
+	width: 750rpx;
+	height: 260rpx;
+	background-color: #EBEEF5;
+}
+.jifen{
+	display: flex;
+	align-items: center;
+	padding: 28rpx;
+}
+.jifenTxt{
+	margin-left: 32rpx;
+}
+.product-hot{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0 30rpx 0 60rpx;
+	justify-content: space-between;
+	margin-top: 68rpx;
+}
+.uni-product{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10rpx;
+}
+.uni-product-title{
+	color: #333333;
+	font-size: 28rpx;
+	padding-bottom: 6rpx;
+}
+.title{
+	text-align: center;
+}
+.goods-price{
+	color: #f7b500;
+	font-size: 22rpx;
+}
+.goods-detail{
+	padding: 30rpx 0;
+}
+.uni-product-price{
+	justify-content: space-between;
+	display: flex;
+	width:282rpx;
+	}
+.image-view{
+	text-align: center;
+}

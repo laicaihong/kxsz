@@ -18,11 +18,11 @@
 		</swiper>
 
 		<view class="menu_wrap">
-			<navigator url="../my/follow/follow">
+			<navigator url="../myPublished/myPublished">
 				<image src="../../static/index/daka.png" mode=""></image>
 				<text>打卡</text>
 			</navigator>
-			<navigator url="">
+			<navigator url="../freeTeaching/freeTeaching">
 				<image src="../../static/index/mfkc.png" mode=""></image>
 				<text>免费课程</text>
 			</navigator>
@@ -83,7 +83,7 @@
 				<image src="../../static/index/qj.png" mode=""></image>
 			</navigator>
 		</view>
-
+<!-- 点击进入我的发表页 请求所有用户数据-->
 		<view class="works_list">
 			<view class="work_item">
 				<view class="user_info">
@@ -289,6 +289,9 @@ export default {
 			} else {
 				this.status = 'noMore'; //赋值查看更多
 			}
+		},
+		getUserDetail:function(){
+			
 		}
 	},
 	mounted() {
@@ -312,6 +315,23 @@ export default {
 			fail: () => {},
 			complete: () => {}
 		});
+		// 请求用户作品列表 得到用户id
+		uni.request({
+			url:'',
+			method:'POST',
+			data:{},
+			header:{
+				'Content-Type': 'application/x-www-form-urlencoded'
+			},
+			success:res=>{
+				
+			},fail:()=>{
+				
+			},
+			complete: () => {
+				
+			}
+		})
 		//主体内容
 		// uni.request({
 		// 	url: 'https://kxsx.kaifadanao.cn/api/index/daily',

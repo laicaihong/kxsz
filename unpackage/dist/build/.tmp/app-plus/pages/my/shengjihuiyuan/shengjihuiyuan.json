@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "升级会员",
+  "titleNView": {
+    "titleSize": "28rpx"
+  },
+  "usingComponents": {
+    "w-picker": "/components/w-picker/w-picker"
+  }
+}

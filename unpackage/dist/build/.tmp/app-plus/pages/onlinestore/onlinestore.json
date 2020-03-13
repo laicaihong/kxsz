@@ -1,0 +1,18 @@
+{
+  "titleNView": {
+    "searchInput": {
+      "align": "left",
+      "backgroundColor": "#efefef",
+      "borderRadius": "30px",
+      "placeholder": "一年级上册"
+    },
+    "buttons": {
+      "text": "地图",
+      "fontSize": "16",
+      "color": "#fff"
+    }
+  },
+  "usingComponents": {
+    "uni-countdown": "/components/uni-countdown/uni-countdown"
+  }
+}

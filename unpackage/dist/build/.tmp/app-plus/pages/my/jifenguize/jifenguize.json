@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "积分规则",
+  "navigationBarBackgroundColor": "#008800",
+  "navigationBarTextStyle": "white",
+  "titleNView": {
+    "titleSize": "28rpx"
+  },
+  "usingComponents": {}
+}

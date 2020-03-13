@@ -1,6 +1,38 @@
-.container {
+
+.recommend-header{
 	margin-left: 16rpx;
 	margin-right: 16rpx;
+}
+.banner {
+	border-radius: 8rpx;
+
+}
+.recommend-footer{
+	margin: 0 26rpx;
+}
+.new-goods {
+	height: 194rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.limitedTime {
+	height: 194rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.recommend-banner {
+	height: 358rpx;
+}
+
+.swiper-item {
+	width: 718rpx;
+	height: 332rpx;
 }
 
 .swiper-tab-list {
@@ -11,36 +43,116 @@
 .uni-tab-bar {
 	margin: 0 28rpx;
 }
-
+.uni-swiper-tab{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.swiper-tab-list{
+	width: 100rpx;
+}
 .uni-tab-bar .active {
 	color: #343434;
 	font-size: 18px;
 }
-
+.search{
+	display: flex;
+}
 .adversity {
 	text-align: center;
 }
-.limitedTime{
-	flex-direction: row;
-},
-.recommend-banner{
+
+.recommend-banner {
 	width: 100%;
 	overflow: hidden;
-	white-space: nowrap;	background-color: #FFFFFF;
-	}
+	white-space: nowrap;
+	background-color: #FFFFFF;
+}
 
-	.goods-box {
-	        display: inline-block;
-	        width: 262upx;
-	        height: 244upx;
-	        background: #0062CC;
-	        margin-right: 30upx;
-	    }
+.uni-product {
+	display: flex;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 30rpx 0 18rpx 0;
+	margin-top: 30rpx;
+}
+
+.uni-product-title {
+	color: #333333;
+	font-size: 32rpx;
+	font-weight: bolder;
+}
+.uni-product-price{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-right: ;
+}
+.goods-detail {
+	padding-left:18rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.image-view {
+	background-color: #EBEEF5;
+	width: 220rpx;
+	height: 200rpx
+}
+
+.recommend {
+	font-size: 20rpx;
+	color: #E02020;
+	border: 1px solid #E02020;
+	padding: 2rpx 6rpx;
+	border-radius: 8rpx;
+}
+
+.recommend-image {
+	padding: 36rpx;
+	text-align: center;
+}
+
+.goods-adverse {
+	background-color: #EBEEF5;
+}
+
+.goods-price {
+	color: #E02020;
+	font-size: 36rpx;
+	text-align: center;
+}
+
+.goods-box {
+	display: inline-block;
+	width: 262upx;
+	height: 244upx;
+	background: #EBEEF5;
+	margin-right: 30upx;
+}
+
 .limitedImage {
 	height: 98rpx;
 }
-.banner-title{
+
+.banner-title {
 	text-align: center;
+	margin: 34rpx;
+}
+
+.image-ruler {
+	width: 330rpx;
+	height: 350rpx;
+	background-color: #EBEEF5;
+}
+.recommend-ruler{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 210rpx;
+}
+.uni-ruler{
+	padding-bottom: 10rpx;
 }
 .active .swiper-tab-line {
 	border-bottom: 6upx solid #E02020;

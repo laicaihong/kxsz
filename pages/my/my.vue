@@ -218,12 +218,14 @@
 		</view>
 		<view class="user_info p_r_l_32">
 			<view class="left_side">
-				<image src="../../static/index/dnkf.png" class="avatar"></image>
+				<navigator url="../userInfo/userInfo">
+					<image src="../../static/index/dnkf.png" class="avatar"></image>
+				</navigator>
 				<view class="info_wrap">
 					<view class="name">
 						<text>asd</text>
 						<view class="huiyuan">
-							<image src="../../static/my/hytq.png" mode=""></image>
+							<image src="../../static/my/hytq.png" mode="widthFix"></image>
 							<navigator url="huiyuantequan/huiyuantequan" class="huiyuan_name">
 								会员特权
 								<image src="../../static/my/jifenreturn.png" mode=""></image>
@@ -278,7 +280,7 @@
 				</view>
 				<image src="../../static/index/qj.png" class="icon_more"></image>
 			</navigator>
-			<navigator url="">
+			<navigator url="../onlinestore/myOrder/myOrder">
 				<view class="left_side">
 					<image src="../../static/my/wddd.png" mode=""></image>
 					<text>我的订单</text>
@@ -323,7 +325,7 @@
 				</view>
 				<image src="../../static/index/qj.png" class="icon_more"></image>
 			</navigator>
-			<navigator url="">
+			<navigator url="huiyuanjifen/huiyuanjifen">
 				<view class="left_side">
 					<image src="../../static/my/wdjf.png" mode=""></image>
 					<text>我的积分</text>

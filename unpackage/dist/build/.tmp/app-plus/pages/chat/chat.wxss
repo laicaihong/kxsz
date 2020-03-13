@@ -1,0 +1,68 @@
+page{
+	background: #F5F5F5;
+}
+.userImg{
+	width: 50rpx;
+	height: 50rpx;
+	border-radius: 50%;
+}
+.userMsg{
+	font-size: 30rpx;
+	color: #007AFF;
+}
+.link{
+	/* margin-top: 30rpx; */
+	/* border-top: 5rpx solid greenyellow; */
+}
+/*聊天信息列表*/
+.linkList{
+	height: 140rpx;
+	position: relative;
+	background: #fff;
+}
+.linkImage{
+	width: 96rpx;
+	height: 96rpx;
+	position: absolute;
+	top: 22rpx;
+	left: 30rpx;
+}
+.linkName{
+	color: #000;
+	font-size: 30rpx;
+	position: absolute;
+	left: 150rpx;
+	top: 30rpx;
+}
+.linkMsg{
+	position: absolute;
+	top: 75rpx;
+	left: 150rpx;
+	font-size: 14rpx;
+	color: #999;
+	width: 300rpx;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.listTime{
+	position: absolute;
+	right: 20rpx;
+	top: 30rpx;
+	color: #B9BEC8;
+	font-size: 28rpx;
+}
+.listUn{
+	font-size: 20rpx;
+	color: #fff;
+	width: 30rpx;
+	height: 30rpx;
+	line-height: 30rpx;
+	border-radius: 50%;
+	position: absolute;
+	top: 10rpx;
+	left: 110rpx;
+	background: #FF3B30;
+	text-align: center;
+}
+
