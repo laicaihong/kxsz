@@ -1,0 +1,41 @@
+/*视频*/
+.banner{
+	width: 100%;
+	height: 420rpx;
+}
+.video{
+	width: 100%;
+	height: 100%;
+}
+/*视频结束*/
+.jianjie{
+	width:100%;
+	height:70rpx;
+	line-height:70rpx;
+	text-align:center;
+	color:#000;
+	font-size:30rpx;
+	background-color:#fff;
+	box-sizing: border-box;
+}
+.kong10{
+	height: 10rpx;
+	background: #f5f5f5;
+}
+.jianjiecont{
+	width:100%;
+	padding:35rpx 20rpx 0;
+	background-color:#fff;
+	font-size:30rpx;
+	color:#6E6E6E;
+	line-height:1.6;
+	box-sizing: border-box;
+}
+.conttext{
+	margin-bottom:20rpx;
+}
+.title{
+	width:100%;
+	text-align:center;
+}
+

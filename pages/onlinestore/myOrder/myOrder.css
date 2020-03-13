@@ -1,0 +1,28 @@
+/* 订单导航 */
+.myorder_tab{
+	width:100%;
+	height:88rpx;
+	line-height:88rpx;
+	background-color:#fff;
+	border-top:1rpx solid #ddd;
+	margin-bottom:10rpx;
+}
+.navtab_item{
+	float:left;
+	width:20%;
+	height:88rpx;
+	line-height:88rpx;
+	text-align:center;
+}
+.navtab_item text{
+	font-size:32rpx;
+}
+.nav-active{
+	border-bottom:5rpx solid #48db8d;
+}
+/* 订单导航结束 */
+/*订单主内容*/
+.tabcont{
+	width:100%;
+}
+/*订单主内容结束*/

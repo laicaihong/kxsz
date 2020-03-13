@@ -1,0 +1,14 @@
+page{
+  background-color: #F5F5F5;
+}
+.item{
+  width:94%;
+  background-color: white;
+  margin: 20rpx auto;
+  border-radius: 10rpx;
+  height:100rpx;
+font-size:34rpx;
+text-align: center;
+line-height: 100rpx
+}
+

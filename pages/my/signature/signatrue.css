@@ -1,0 +1,119 @@
+/* pages/my/gexingname/gexingname.wxss */
+page{
+	box-sizing: border-box;
+	padding-top:10%;
+	padding-bottom:20rpx;
+	background-color: #f8f8f8;
+}
+.section {
+ 
+  background-color: #f8f8f8;
+  height: 100%;
+  position: fixed;
+  width:100%;
+}
+
+.section_cont {
+  width: 100%;
+  height: 425rpx;
+  /* background-color: #f8f8f8; */
+  border-radius: 15rpx;
+  padding-bottom: 80%;
+}
+.header-box{
+  text-align: center;
+}
+.header {
+  border-radius: 50%;
+  width:5rem;
+  height:5rem;
+  border: 0.01rem solid pink;
+  position: relative;
+  z-index: 100; 
+}
+.body-box{
+  background-color: white;
+  width:96%;
+  margin:-1.5rem auto;
+  position: relative;
+  border-radius: 20rpx;
+}
+.showinfo {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  text-align: center;
+  /* border: 1rpx solid #ebf6eb; */
+  border-radius: 10rpx;
+}
+.showinfos {
+  width: 100%;
+  /* height:400rpx; */
+  border-radius: 10rpx;
+}
+.showinfo:first-child {
+  margin-bottom: 20rpx;
+}
+
+.noshow {
+  width: 100%;
+  text-align: center;
+  /* position: relative; */
+}
+.icon {
+  width: 200rpx;
+  height: 180rpx;
+  background-size: 100% 100%;
+  margin-bottom: 40rpx;
+  
+}
+
+.text {
+  color: #454343;
+  font-size: 36rpx;
+ 
+}
+
+.wujieguo{
+  margin: 60rpx auto;
+  
+}
+
+
+.seedetail {
+  width:90%;
+  height:88rpx;
+  line-height:88rpx;
+  border-radius:44rpx;
+  background-color:#008800;
+  color:#fff;
+  border:0;
+  font-size:30rpx;
+  margin:80rpx auto 20rpx;
+}
+
+.tip{
+  color:#999999;
+  font-size:26rpx;
+  text-align: center;
+  /* position: absolute; */
+  /* bottom:40rpx;
+  left:30%; */
+}
+.time{
+  position: fixed;
+  bottom:120rpx;
+  right:100rpx;
+  text-align:right;
+}
+
+.item1{
+	display: flex;
+	justify-content: center;
+	align-item: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+

@@ -1,0 +1,69 @@
+.loginText{
+	margin: 140rpx 0 0 84rpx;
+	font-size: 54rpx;
+	color: #3E3D3D;
+	padding-bottom: 40rpx;
+}
+.pla{
+	color: #C6C9CA;
+	font-size: 30rpx;
+}
+.loginInput{
+	width: 620rpx;
+	height: 90rpx;
+	text-indent: 54rpx;
+	color: #3E3D3D;
+	font-size: 30rpx;
+}
+.phoneInput{
+	margin: auto;
+	margin-top: 60rpx;
+}
+.yzmLogin{
+	width: 620rpx;
+	height: 90rpx;
+	margin: auto;
+	margin-top: 40rpx;
+}
+.yzmInput{
+	width: 400rpx;
+	height: 90rpx;
+	text-indent: 54rpx;
+	color: #3E3D3D;
+	font-size: 30rpx;
+	float: left;
+}
+.yzmBtn{
+	font-size: 26rpx;
+	color: #2F881E;
+	float: right;
+	line-height: 84rpx;
+}
+.yzmTime{
+	font-size: 26rpx;
+	color: #C6C9CA;
+	float: right;
+	line-height: 84rpx;
+}
+.passwordInput{
+	margin: auto;
+	margin-top: 40rpx;
+}
+.loginBtn{
+	width: 620rpx;
+	height: 84rpx;
+	margin: auto;
+	margin-top: 84rpx;
+	border-radius: 84rpx;
+	font-size: 32rpx;
+	line-height: 84rpx;
+	text-align: center;
+}
+.loginnBtNo{
+	background: #f5;
+	color: #999;
+}
+.loginnBtnYes{
+	background: #2F881E;
+	color: #fff;
+}

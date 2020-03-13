@@ -1,0 +1,211 @@
+.status_bar {
+	height: var(--status-bar-height);
+	width: 100%;
+}
+
+.index_page {
+	padding: 0 28rpx;
+}
+
+.uni-image {
+	height: 358rpx;
+	width: 100%;
+}
+
+/*在线教学*/
+.const-list {
+	width: 100%;
+	height: 190rpx;
+	background-color: #f5f5f5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.recommend_title{
+	font-size:28px ;
+	font-weight: bolder;
+}
+
+.const-line {
+	width: calc(100% / 3);
+	height: 145rpx;
+	float: left;
+	font-weight: bolder;
+}
+
+.const-list-item {
+	height: 184rpx;
+	position: relative;
+}
+
+.const-list-item image {
+	width: 220rpx;
+	display: block;
+	margin: auto;
+}
+
+.const-list-item text {
+	position: absolute;
+	top: 51rpx;
+	left: 31rpx;
+	font-size: 28rpx;
+	color: #fff;
+}
+
+/*在线教学结束*/
+/*精品推荐*/
+/* .recommend {
+	width: 100%;
+	height: 69rpx;
+	background-color: #fff;
+	position: relative;
+	border-bottom: 15rpx solid #f5f5f5;
+}
+
+.recommendText {
+	height: 33rpx;
+	line-height: 33rpx;
+	font-size: 30rpx;
+	font-weight: bolder;
+	border-left: 6rpx solid #008800;
+	padding-left: 10rpx;
+	position: absolute;
+	top: 18rpx;
+	left: 30rpx;
+} */
+
+/* 主内容 */
+/* .recommend-item {
+	padding: 20rpx;
+	width: 100%;
+	background-color: #fff;
+	padding-left: 30rpx;
+	padding-bottom: 6rpx;
+	border-bottom: 20rpx solid #f5f5f5;
+	box-sizing: border-box;
+}
+
+.item-top {
+	margin-bottom: 20rpx;
+	position: relative;
+}
+
+.touxiangicon {
+	width: 74rpx;
+	height: 74rpx;
+	background-size: 100% 100%;
+	border-radius: 50%;
+	margin-right: 25rpx;
+}
+
+.info {
+	position: absolute;
+	top: 5rpx;
+	left: 95rpx;
+	font-size: 0;
+}
+
+.item-top .title {
+	font-size: 32rpx;
+	color: #008800;
+	display: block;
+}
+
+.item-top .time {
+	font-size: 24rpx;
+	color: #848484;
+	margin-right: 30rpx;
+}
+
+.item-middle {
+	width: 100%;
+	height: auto;
+}
+
+.item-middle .conttext {
+	font-size: 31rpx;
+	display: inline-block;
+	margin-bottom: 20rpx;
+}
+
+.middle-image image {
+	width: 31%;
+	height: 200rpx;
+	margin-bottom: 20rpx;
+	background-size: 100% 100%;
+	margin-right: 10rpx;
+}
+
+.smallicon {
+	height: 85rpx;
+	border-top: 3rpx solid #f5f5f5;
+	margin-top: 50rpx;
+}
+
+.smallicon-flex {
+	width: calc(100% / 3);
+	float: left;
+}
+
+.smallicon-flex image {
+	vertical-align: middle;
+}
+
+.smallicon-flex text {
+	line-height: 85rpx;
+	font-size: 30rpx;
+	margin-left: 20rpx;
+} */
+
+/*精品推荐结束*/
+/*签到*/
+.dakaciclecont_daka {
+	position: fixed;
+	bottom: 120rpx;
+	right: 10rpx;
+	width: 144rpx;
+	height: 144rpx;
+}
+
+.dakaciclecont_daka_flex {
+	-webkit-animation-name: scaleDraw;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	/*动画播放的次数*/
+	-webkit-animation-duration: 5s;
+	/*动画所花费的时间*/
+	position: relative;
+	background: url(../../static/index/dakacicle.png);
+	background-size: 100% 100%;
+	width: 144rpx;
+	height: 144rpx;
+	text-align: center;
+}
+.dakaciclecont_daka_flex text{
+	color: #fff;
+	font-size:28rpx;
+	line-height: 144rpx;
+}
+@keyframes scaleDraw {
+
+	/*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+	0% {
+		transform: scale(1);
+		/*开始为原始大小*/
+	}
+
+	25% {
+		transform: scale(1.1);
+		/*放大1.1倍*/
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	75% {
+		transform: scale(1.1);
+	}
+}
+
+/*签到结束*/

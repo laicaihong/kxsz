@@ -1,0 +1,83 @@
+page{
+	background-color:#f5f5f5;
+}
+.wenzijiema{
+	padding:20rpx;
+}
+/*介绍*/
+.rumenkecheng{
+	width:100%;
+	border:1rpx solid #c9c9c9;
+	padding:35rpx 25rpx;
+	box-sizing: border-box;
+}
+.topcont{
+	width:67%;
+	margin-right:25rpx;
+}
+.title{
+	color:#5b5b5b;
+	font-size:30rpx;
+	border-bottom:1rpx solid #bfbfbf;
+	padding-bottom:20rpx;
+	text-align:justify;
+}
+.kechenglist{
+	display:inline-block;
+	padding-top:30rpx;
+	clear: both;
+}
+.topright{
+	width:190rpx;
+	height:268rpx;
+	border:1rpx solid #bfbfbf;
+	box-sizing: border-box;
+	margin: 0;
+}
+.topcont{
+	float: left;
+}
+.topcontimg{
+	width: 100%;
+	height: 100%;
+}
+/*介绍结束*/
+/*目录*/
+.mulu{
+	color:#5B5B5B;
+	font-size:30rpx;
+	margin:27rpx 0;
+}
+.cataloguelist{
+	width:100%;
+	border:1rpx solid #C9C9C9;
+	display:inline-block;
+	padding:0 5rpx;
+	box-sizing: border-box;
+}
+.catalogueitem{
+	width:100%;
+	height:87rpx;
+	line-height:87rpx;
+	border-bottom:1rpx solid #C9C9C9;
+	font-size:30rpx;
+	color:#5B5B5B;
+	position:relative;
+	padding:0 15rpx;
+	box-sizing: border-box;
+}
+.itemtitle{
+	margin-right:20rpx;
+}
+.linkrighticon{
+	width:28rpx;
+	height:28rpx;
+	background-size:100% 100%;
+	position:absolute;
+	right:15rpx;
+	top:35%;
+}
+.cataloguelist .catalogueitem:last-child{
+	border-bottom:0
+}
+/*目录结束*/

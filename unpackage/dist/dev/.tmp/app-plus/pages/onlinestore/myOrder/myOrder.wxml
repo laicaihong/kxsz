@@ -1,0 +1,1 @@
+<view><view class="myorder_tab"><block wx:for="{{section}}" wx:for-item="data" wx:for-index="__i0__" wx:key="typeId"><view class="{{[data.typeId==currentId?'navtab_item nav-active':'navtab_item']}}"><text>{{data.name}}</text></view></block></view><view class="tabcont daifukuan"></view></view>

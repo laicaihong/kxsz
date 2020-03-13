@@ -1,0 +1,1 @@
+<view><view class="tabView"><block wx:for="{{tabBar.list}}" wx:for-item="data" wx:for-index="__i0__" wx:key="index"><view class="tabBar"><view>{{''+data.text+''}}</view></view></block></view></view>

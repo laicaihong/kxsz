@@ -1,0 +1,37 @@
+page{
+	background: #F5F5F5;
+}
+.chatContent{
+	min-height: 120rpx;
+	position: relative;
+	clear: both;
+}
+.chatImage{
+	width: 60rpx;
+	height: 60rpx;
+	float: left;
+	margin: 30rpx 0 0 30rpx;
+	/* position: absolute; */
+	/* top: 30rpx; */
+	/* left: 30rpx; */
+}
+.chatText{
+	float: left;
+	margin: 30rpx 0 0 20rpx;
+	/* position: absolute; */
+	/* top: 30rpx; */
+	/* left: 120rpx; */
+}
+.chatTextMsg{
+	font-size: 24rpx;
+	color: #999;
+	min-height: 60rpx;
+	background: #fff;
+	line-height: 60rpx;
+	padding: 0 20rpx;
+	box-sizing: border-box;
+	display: block;
+}
+.chatImageMsg{
+	max-width: 400rpx !important;
+}

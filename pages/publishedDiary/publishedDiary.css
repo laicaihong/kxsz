@@ -1,0 +1,75 @@
+.title{
+	background-color:#f9f9f9;
+	width:100%;
+	height:130rpx;
+	padding:25rpx;
+	font-size:24rpx;
+	box-sizing: border-box;
+}
+.titletext{
+	font-size:30rpx;
+	margin-top:20rpx;
+}
+.inputPlace{
+	color: #b2afaf;
+}
+.article{
+	padding:60rpx 45rpx;
+}
+.textareacont{
+	width:100%;
+	height:300rpx;
+	font-size:30rpx;
+}
+.uploadinfo{
+	width:100%;
+	display:inline-block;
+	padding-left:14rpx;
+	margin-bottom:35rpx;
+}
+.uploadinfoblock{
+	float:left;
+	width:170rpx;
+	height:170rpx;
+	line-height:160rpx;
+	border:1rpx solid #c9c9c9;
+	border-radius:15rpx;
+	margin:0 20rpx 10rpx 0;
+	text-align:center;
+	position:relative;
+}
+.address{
+	width:100%;
+	padding:0 20rpx;
+	position:relative;
+	display:inline-block;
+	margin-bottom:100rpx;
+}
+.uploadbtn{
+	width:100%;
+	height:90rpx;
+	margin-bottom:50rpx;
+}
+.btn{
+	width:70%;
+	height:90rpx;
+	line-height:90rpx;
+	background-color:#008800;
+	color:#fff;
+	font-size:36rpx;
+	border-radius:10rpx;
+	margin:0 auto;
+}
+.videoImg{
+	width:71rpx;
+	height:51rpx;
+}
+.diqiu{
+	width:28rpx;
+	height:28rpx;
+}
+.itemtitle{
+	font-size:24rpx;
+	color:#999;
+	margin-left: 20rpx;
+}

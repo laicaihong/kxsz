@@ -1,0 +1,101 @@
+.top{
+	width:100%;
+	height:180rpx;
+	background-color:#fff;
+	border-top:1rpx solid #e6e6e6;
+	padding-top:25rpx;
+	box-sizing: border-box;
+}
+.bj{
+	background: #f5f5f5;
+	height: 20rpx;
+}
+.touxiang{
+	width:122rpx;
+	height:122rpx;
+	border-radius:50%;
+	margin:0 auto;
+	border:1rpx solid #66a95e;
+	overflow: hidden;
+}
+.shengjiimg{
+	width:120rpx;
+	height:120rpx;
+	background-size:100% 100%;
+}
+.bottom{
+	width:100%;
+	background-color:#fff;
+	padding:50rpx 30rpx;
+	box-sizing: border-box;
+}
+.form{
+	width:100%;
+	display:inline-block;
+}
+.form-item{
+	width:100%;
+	height:100rpx;
+	padding:0 20rpx;
+	position:relative;
+	border-bottom:1rpx solid #e6e6e6;
+	box-sizing: border-box;
+}
+.itemtitle{
+	width:180rpx;
+	height:100rpx;
+	line-height:100rpx;
+	display:inline-block;
+	color:#666;
+	font-size:30rpx;
+}
+.pla{
+	color: #999;
+	  font-size: 30rpx;
+}
+.picker{
+	float:right;
+	text-align:right;
+	height:100rpx;
+	line-height:100rpx;
+}
+.input{
+	width:70%;
+	height:100rpx;
+	position:absolute;
+	top:0;
+	left:180rpx;
+	font-size:30rpx;
+	text-align:right;
+}
+.xaiicon{
+	width: 8px;
+	height: 13px;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0;
+	top: 39%;
+}
+picker{
+	width:100%;
+	height:100rpx;
+	line-height:100rpx;
+	font-size:30rpx;
+}
+.pickerText{
+	font-size: 30rpx;
+}
+.lijishengji{
+	margin:200rpx 0 ;
+}
+.sengjibtn{
+	width:100%;
+	height:88rpx;
+	line-height:88rpx;
+	border-radius:44rpx;
+	background-color:#008800;
+	color:#fff;
+	border:0;
+	font-size:30rpx;
+	box-sizing: border-box;
+}

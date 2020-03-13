@@ -1,0 +1,50 @@
+.container {
+	margin-left: 16rpx;
+	margin-right: 16rpx;
+}
+
+.swiper-tab-list {
+	color: #969696;
+	font-size: 16px;
+}
+
+.uni-tab-bar {
+	margin: 0 28rpx;
+}
+
+.uni-tab-bar .active {
+	color: #343434;
+	font-size: 18px;
+}
+
+.adversity {
+	text-align: center;
+}
+.limitedTime{
+	flex-direction: row;
+},
+.recommend-banner{
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;	background-color: #FFFFFF;
+	}
+
+	.goods-box {
+	        display: inline-block;
+	        width: 262upx;
+	        height: 244upx;
+	        background: #0062CC;
+	        margin-right: 30upx;
+	    }
+.limitedImage {
+	height: 98rpx;
+}
+.banner-title{
+	text-align: center;
+}
+.active .swiper-tab-line {
+	border-bottom: 6upx solid #E02020;
+	width: 22px;
+	margin: auto;
+	border-top: 6upx solid #E02020;
+}

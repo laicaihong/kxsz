@@ -1,0 +1,100 @@
+.bottom{
+	margin-top: 10rpx;
+	width: 100%;
+}
+.form{
+	width:100%;
+	display:inline-block;
+}
+.touxiang{
+	width:100%;
+	height:150rpx;
+	line-height:150rpx;
+	padding:0 40rpx;
+	position:relative;
+	border-bottom:1rpx solid #e6e6e6;
+	background-color:#fff;
+	box-sizing: border-box;
+}
+.itemtitle{
+	width:180rpx;
+	height:106rpx;
+	line-height:106rpx;
+	display:inline-block;
+	color:#666;
+	font-size:32rpx;
+}
+.huiyuanimg{
+	width:86rpx;
+	height:86rpx;
+	background-size:100% 100%;
+	position:absolute;
+	right:80rpx;
+	top:25%;
+}
+.form-item{
+	width:100%;
+	height:106rpx;
+	padding:0 40rpx;
+	position:relative;
+	border-bottom:1rpx solid #e6e6e6;
+	background-color:#fff;
+	box-sizing: border-box;
+}
+.input{
+	width:70%;
+	height:106rpx;
+	position:absolute;
+	top:0;
+	left:180rpx;
+	font-size:30rpx;
+	text-align:right;
+	color:#959595;
+}
+picker,.pickerpicker{
+	width:65%;
+	height:106rpx;
+	line-height:106rpx;
+	position:absolute;
+	top:0;
+	left:180rpx;
+}
+.picker{
+	height:106rpx;
+	line-height:106rpx;
+	text-align:right;
+	color:#959595;
+	font-size:28rpx;
+}
+.xaiicon{
+	width:16rpx;
+	height:27rpx;
+	background-size:100% 100%;
+	position:absolute;
+	right:-40rpx;
+	top:39%;
+}
+.form-item-bottom{
+	border-bottom:0;
+}
+.datedirsday{
+	height: 20rpx;
+	background:#F5F5F5 ;
+}
+.lijishengji{
+	width:100%;
+	height:88rpx;
+	border-radius:44rpx;
+	margin-top:200rpx;
+}
+.sengjibtn{
+	margin:0 auto;
+	width:90%;
+	height:88rpx;
+	line-height:88rpx;
+	border-radius:44rpx;
+	background-color:#008800;
+	color:#fff;
+	border:0;
+	font-size:30rpx;
+}

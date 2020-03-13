@@ -1,0 +1,47 @@
+.card{
+	width:90%;
+	height:280rpx;
+	border-radius:10rpx;
+	background-color:#52ae52;
+	margin:80rpx auto;
+	box-shadow:0rpx 0rpx 5rpx #000000;
+}
+.card_title{
+	color:white;
+	font-size:36rpx;
+	font-weight:bold;
+	display:block;
+	padding-top:50rpx;
+	margin-left:30rpx;
+}
+.jifen{
+	font-weight:bold;
+	font-size:66rpx;
+	color:white;
+	margin-left:30rpx;
+}
+.line{
+	height:1rpx;
+	background-color:#e6e6e6;
+	width:90%;
+	margin:60rpx auto;
+}
+.txt{
+	color:#999999;
+	font-size:30rpx;
+	width:200rpx;
+	height:40rpx;
+	background-color:white;
+	position:relative;
+	top:-20rpx;
+	display:block;
+	margin:0 auto;
+	text-align:center;
+}
+.mokuai{
+	padding-left:30rpx;
+	padding-right:30rpx;
+	position:relative;
+	top:-50rpx;
+}
+

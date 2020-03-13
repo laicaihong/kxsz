@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/my/jifenguize/jifenguize",
+    "pages/my/huiyuantequan/huiyuantequan",
+    "pages/jctbxzjx/jctbxzjx",
+    "pages/onlinestore/onlinestore",
+    "pages/myPublished/myPublished",
+    "pages/my/daySignin/daySignin",
+    "pages/onlinestore/myOrder/myOrder",
+    "pages/my/huiyuanxinxi/huiyuanxinxi",
+    "pages/my/huiyuanjifen/huiyuanjifen",
+    "pages/my/mycollect/mycollect",
+    "pages/my/lstgjl/lstgjl",
+    "pages/publishedDiary/publishedDiary",
+    "pages/chat/chat",
+    "pages/chat/chatContent/chatContent",
+    "pages/freeTeaching/freeTeaching",
+    "pages/login/login",
+    "pages/reg/reg",
+    "pages/hncjiaoxue_mulu/hncjiaoxue_mulu",
+    "pages/Copyright/Copyright",
+    "pages/my/shengjihuiyuan/shengjihuiyuan",
+    "pages/growthDiary/growthDiary",
+    "pages/hncjiaoxue_intro/hncjiaoxue_intro",
+    "pages/my/mydiscount/mydiscount",
+    "pages/my/signature/signature",
+    "pages/my/videoGift/videoGift",
+    "pages/my/activeCode/activeCode",
+    "pages/message/message"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#008800",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#008800",
+    "backgroundColor": "#ffffff",
+    "color": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/index/index.png",
+        "selectedIconPath": "/static/index/index_check.png",
+        "biaocount": 0
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/static/index/message.png",
+        "selectedIconPath": "/static/index/message-active.png",
+        "biaocount": 1
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/static/index/my.png",
+        "selectedIconPath": "/static/index/my_check.png",
+        "biaocount": 0
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "kxsxApp",
+  "compilerVersion": "2.6.1",
+  "usingComponents": {}
+}

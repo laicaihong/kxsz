@@ -1,0 +1,66 @@
+/*视频*/
+.banner{
+	width: 100%;
+	height: 420rpx;
+}
+.video{
+	width: 100%;
+	height: 100%;
+}
+/*视频结束*/
+/*一些功能*/
+.module{
+	width:100%;
+	height:auto;
+	padding:50rpx 0;
+	display:inline-block;
+}
+.module_item{
+	width:33%;
+	height:200rpx;
+	float:left;
+	margin:0 0 50rpx 0;
+	text-align:center;
+}
+.itemcont{
+	width:120rpx;
+	height:120rpx;
+	border-radius:20rpx;
+	background-color:#e6f0e8;
+	margin:0 auto 30rpx;
+}
+.icon{
+	width:120rpx;
+	height:120rpx;
+}
+.module_item text{
+	height:20rpx;
+	font-size:28rpx;
+	color:#666666;
+	line-height:1.4;
+	display:inline-block;
+	font-weight:bold;
+}
+/*一些功能结束*/
+/*联系客服按钮*/
+.rightfiex{
+	position:fixed;
+	right:20rpx;
+	bottom:200rpx;
+}
+.rightfiex_cont{
+	width:74rpx;
+	height:74rpx;
+	background:rgba(255,255,255,1);
+	box-shadow:0 5rpx 15rpx 0 rgba(41,38,32,0.1);
+	border-radius:50%;
+	margin-bottom:15rpx;
+	padding:20rpx;
+	box-sizing: border-box;
+}
+.rightfiex_first{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+/*联系客服按钮结束*/

@@ -1,0 +1,133 @@
+.recommend-item {
+	padding: 20rpx;
+	width: 100%;
+	background-color: #fff;
+	padding-left: 30rpx;
+	padding-bottom: 6rpx;
+	border-bottom: 20rpx solid #f5f5f5;
+	box-sizing: border-box;
+}
+
+.item-top {
+	margin-bottom: 20rpx;
+	position: relative;
+}
+
+.touxiangicon {
+	width: 74rpx;
+	height: 74rpx;
+	background-size: 100% 100%;
+	border-radius: 50%;
+	margin-right: 25rpx;
+}
+
+.info {
+	position: absolute;
+	top: 5rpx;
+	left: 95rpx;
+	font-size: 0;
+}
+
+.item-top .title {
+	font-size: 32rpx;
+	color: #008800;
+	display: block;
+}
+
+.item-top .time {
+	font-size: 24rpx;
+	color: #848484;
+	margin-right: 30rpx;
+}
+
+.item-middle {
+	width: 100%;
+	height: auto;
+}
+
+.item-middle .conttext {
+	font-size: 31rpx;
+	display: inline-block;
+	margin-bottom: 20rpx;
+}
+
+.middle-image image {
+	width: 31%;
+	height: 200rpx;
+	margin-bottom: 20rpx;
+	background-size: 100% 100%;
+	margin-right: 10rpx;
+}
+
+.smallicon {
+	height: 85rpx;
+	border-top: 3rpx solid #f5f5f5;
+	margin-top: 50rpx;
+}
+
+.smallicon-flex {
+	width: calc(100% / 3);
+	float: left;
+}
+
+.smallicon-flex image {
+	vertical-align: middle;
+}
+
+.smallicon-flex text {
+	line-height: 85rpx;
+	font-size: 30rpx;
+	margin-left: 20rpx;
+}
+/*评论*/
+.studyitem-bottom{
+	width:100%;
+	height:auto;
+	padding:15rpx 25rpx;
+	margin-top:30rpx;
+	padding-top:30rpx;
+	box-sizing: border-box;
+}
+.comment{
+	font-size:28rpx;
+	line-height:1.4;
+	margin-bottom:40rpx;
+}
+.comment-avatar{
+	width:50rpx;
+	height:50rpx;
+	vertical-align:middle;
+	margin-right:30rpx;
+	color:#008800;
+}
+.textred{
+	font-size:34rpx;
+	color:#008800;
+}
+.comment-body{
+	padding-left:80rpx;
+	margin-top:20rpx;
+}
+.redtree_text{
+	margin-bottom:10rpx;
+	font-size: 34rpx;
+}
+.comment-time{
+	margin-top:10rpx;
+	color:grey;
+	font-size:22rpx;
+}
+.l{
+	float: left;
+}
+.comment-count{
+	border-radius:30rpx;
+	font-size:22rpx;
+	margin-left:20rpx;
+	height:40rpx;
+	line-height:40rpx;
+	padding-left:10rpx;
+	padding-right:10rpx;
+	background-color:#f5f5f5;
+}
+/*评论结束*/

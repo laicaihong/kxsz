@@ -1,0 +1,88 @@
+/*日历*/
+.uni-page-head-bd>.uni-page-head__title{
+	font-weight: normal;
+}
+.daySignin_top{
+	width:100%;
+	height:200rpx;
+	background-color:#080;
+	padding-top:50rpx;
+	box-sizing: border-box;
+}
+.qiandaoborder{
+	width:200rpx;
+	height:70rpx;
+	line-height:70rpx;
+	border-radius:50rpx;
+	border:1rpx solid #fff;
+	background-color:#080;
+	color:#fff;
+	font-size:30rpx;
+	text-align:center;
+	position:relative;
+	margin:0 auto 20rpx;
+}
+.dateimg{
+	width:52rpx;
+	height:48rpx;
+	background-size:100% 100%;
+	position:relative;
+	top:10rpx;
+	margin-right:10rpx;
+}
+.qiaodaotext{
+	font-size:28rpx;
+	color:#fff;
+	text-align:center;
+}
+/*打卡*/
+.dakaciclecont_daka {
+	position: fixed;
+	bottom: 120rpx;
+	right: 10rpx;
+	width: 144rpx;
+	height: 144rpx;
+}
+
+.dakaciclecont_daka_flex {
+	-webkit-animation-name: scaleDraw;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	/*动画播放的次数*/
+	-webkit-animation-duration: 5s;
+	/*动画所花费的时间*/
+	position: relative;
+	background: url(../../../static/index/dakacicle.png);
+	background-size: 100% 100%;
+	width: 144rpx;
+	height: 144rpx;
+	text-align: center;
+}
+.dakaciclecont_daka_flex text{
+	color: #fff;
+	font-size:28rpx;
+	line-height: 144rpx;
+}
+@keyframes scaleDraw {
+
+	/*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+	0% {
+		transform: scale(1);
+		/*开始为原始大小*/
+	}
+
+	25% {
+		transform: scale(1.1);
+		/*放大1.1倍*/
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	75% {
+		transform: scale(1.1);
+	}
+}
+
+/*打卡结束*/

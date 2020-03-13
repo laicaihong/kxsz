@@ -1,0 +1,111 @@
+.bg-img{
+	width:100%;
+	height:388rpx;
+}
+.bottom-box{
+	position:relative;
+	background-color:#fff;
+	width:96%;
+	margin:-190rpx auto;
+	border-radius:20rpx;
+	padding:0 50rpx 50rpx 50rpx;
+	box-sizing: border-box;
+}
+.logo-img{
+	width:208rpx;
+	height:208rpx;
+	border-radius:50%;
+	position:absolute;
+	top:-110rpx;
+	left:50%;
+	margin-left:-104rpx;
+}
+.title{
+	color:#333;
+	font-size:40rpx;
+	margin-bottom:30rpx;
+	padding-top:120rpx;
+}
+/*表单数据*/
+.form-item{
+	width:100%;
+	height:100rpx;
+	position:relative;
+	border-bottom:1rpx solid #f5f5f5;
+}
+.itemtitle{
+	width:180rpx;
+	height:100rpx;
+	line-height:100rpx;
+	display:inline-block;
+	color:black;
+	font-size:30rpx;
+	text-align: left;
+	position: absolute;
+	left: 0;
+}
+.picker {
+	float:right;
+	text-align:right;
+	height:100rpx;
+	line-height:100rpx;
+	margin-right:20rpx;
+}
+.input{
+	width:70%;
+	height:100rpx;
+	position:absolute;
+	top:0;
+	left:180rpx;
+	font-size:30rpx;
+	text-align:right;
+}
+.xaiicon{
+	    width: 8px;
+	    height: 13px;
+	    background-size: 100% 100%;
+	    position: absolute;
+	    right: 0;
+	    top: 39%;
+}
+picker{
+	width:100%;
+	height:100rpx;
+	line-height:100rpx;
+	position:absolute;
+	top:0;
+	left:0;
+	font-size:30rpx;
+}
+.pickerpicker{
+	width: 100%;
+	height: 50px;
+}
+.pickerText{
+	font-size: 30rpx;
+}
+.get_code{
+	float:right;
+	margin-top:16rpx;
+	font-size:26rpx;
+	color:#fff;
+	border:1rpx solid #48DB8D;
+	background-color:#48DB8D;
+	border-radius:50rpx;
+	padding:10rpx;
+}
+.sengjibtn{
+	width:100%;
+	height:88rpx;
+	line-height:88rpx;
+	border-radius:44rpx;
+	background-color:#48DB8D;
+	color:#fff;
+	border:0;
+	font-size:30rpx;
+	box-sizing: border-box;
+}
+.lijishengji{
+	margin:50rpx 0 ;
+}
+/*表单数据结束*/
