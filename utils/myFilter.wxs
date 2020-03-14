@@ -1,0 +1,72 @@
+var formatTimeStamp = function (time) {
+  //如果时间格式是正确的，那下面这一步转化时间格式就可以不用了
+  var dateDiff = getDate().getTime() - time * 1000; //时间差的毫秒数
+  var dayDiff = Math.floor(dateDiff / (24 * 3600 * 1000));
+  //计算出相差天数
+  var leave1 = dateDiff % (24 * 3600 * 1000); //计算天数后剩余的毫秒数
+  var hours = Math.floor(leave1 / (3600 * 1000));
+  //计算出小时数
+  //计算相差分钟数
+  var leave2 = leave1 % (3600 * 1000) //计算小时数后剩余的毫秒数
+  var minutes = Math.floor(leave2 / (60 * 1000))
+  //计算相差分钟数
+  //计算相差秒数
+  var leave3 = leave2 % (60 * 1000) //计算分钟数后剩余的毫秒数
+  var seconds = Math.round(leave3 / 1000);
+  var timesString = '';
+
+  if (dayDiff != 0) {
+    timesString = dayDiff + '天前';
+  } else if (dayDiff == 0 && hours != 0) {
+    timesString = hours + '小时';
+  } else if (dayDiff == 0 && hours == 0) {
+    if (minutes == 0) {
+      timesString = "刚刚";
+    } else {
+      timesString = minutes + '分前';
+    }
+  }
+
+  return timesString
+
+}
+var dateFormat = function (time, type) {
+  switch (type) {
+    case 'day':
+      return getDate(time * 1000).getDate() + '日'
+      break;
+    case 'month':
+      return getDate(time * 1000).getMonth() + 1 + '月'
+      break;
+    default:
+      break;
+  }
+}
+var cutString = function (str, len) {
+  //length属性读出来的汉字长度为1
+  if (str.length * 2 <= len) {
+    return str;
+  }
+  var strlen = 0;
+  var s = "";
+  for (var i = 0; i < str.length; i++) {
+    s = s + str.charAt(i);
+    if (str.charCodeAt(i) > 128) {
+      strlen = strlen + 2;
+      if (strlen >= len) {
+        return s.substring(0, s.length - 1) + "...";
+      }
+    } else {
+      strlen = strlen + 1;
+      if (strlen >= len) {
+        return s.substring(0, s.length - 2) + "...";
+      }
+    }
+  }
+  return s;
+}
+module.exports = {
+  formatTimeStamp: formatTimeStamp,
+  dateFormat: dateFormat,
+  cutString: cutString
+};

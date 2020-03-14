@@ -38,7 +38,7 @@
 				<image src="../../static/index/zxsc.png" mode=""></image>
 				<text>在线商城</text>
 			</navigator>
-			<navigator url="">
+			<navigator url="../brain/brain">
 				<image src="../../static/index/dnkf.png" mode=""></image>
 				<text>大脑开发</text>
 			</navigator>
