@@ -1,3 +1,2 @@
 # kxsz
 uniapp
-test

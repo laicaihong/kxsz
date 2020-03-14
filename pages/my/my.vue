@@ -225,7 +225,7 @@
 					<view class="name">
 						<text>asd</text>
 						<view class="huiyuan">
-							<image src="../../static/my/hytq.png" mode="widthFix"></image>
+							<image src="/static/my/hytq.png" style="width: 166rpx" mode="widthFix"></image>
 							<navigator url="huiyuantequan/huiyuantequan" class="huiyuan_name">
 								会员特权
 								<image src="../../static/my/jifenreturn.png" mode=""></image>
@@ -376,14 +376,15 @@ export default {
     height: var(--status-bar-height);  
     width: 100%;  
     background-color: #F8F8F8;  
-} 
+}
+.page{
+
+}
 .top_title {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20rpx 32rpx;
-	margin-bottom: 26rpx;
-
+	padding: 34rpx 28rpx;
 	text {
 		font-size: 36rpx;
 		font-weight: 500;
@@ -401,7 +402,7 @@ export default {
 }
 .user_info {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: space-between;
 	padding-bottom: 28rpx;
 
@@ -432,8 +433,7 @@ export default {
 				
 				.huiyuan {
 					position: relative;
-					width: 130rpx;
-					height: 32rpx;
+					width: 166rpx;
 					font-size: 0;
 					
 					> image {
@@ -452,9 +452,11 @@ export default {
 						width: 100%;
 						height: 100%;
 						padding-right: 10rpx;
-						padding-left: 38rpx;
+						padding-left: 42rpx;
 						font-size: 16rpx;
-						line-height: 32rpx;
+						font-weight:400;
+						color:rgba(255,255,255,1);
+						line-height:16rpx;
 						
 						image {
 							width: 8rpx;
