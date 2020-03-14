@@ -1,8 +1,8 @@
 <template>
 	<view class="container">
 		<view class="top_title">
-			<navigator url=""><image src="../../static/index/gwc.png" mode="" style="width: 40rpx;height: 40rpx;"></image></navigator>
-			<navigator url=""><image src="../../static/index/gwc.png" mode="" style="width: 40rpx;height: 40rpx;"></image></navigator>
+			<navigator url="../index/index"><image src="../../static/onlineStore/back.png" mode="" style="width: 18rpx;height: 32rpx;"></image></navigator>
+			<navigator url=""><image src="../../static/index/gwc.png" mode="" style="width: 44rpx;height: 44rpx;"></image></navigator>
 		</view>
 		<view class="recommend-header">
 			<view class="index-header">
@@ -59,7 +59,7 @@
 				<image src="../../static/onlineStore/xpss.png" style="width:182rpx;height: 78rpx;" mode="aspectFit"></image>
 				<view class="recommend">推荐</view>
 				<view class="recommend-product" v-for="(item,index) in productList .slice(0,1)" :key="index">
-					<navigator url="">
+					<navigator url="../product-detail/product-detail">
 						<text style="font-size: 28rpx;">{{item.title}}</text>
 					</navigator>
 				</view>
@@ -82,7 +82,7 @@
 		<view class="recommend-banner">
 			<scroll-view scroll-x="true" show-scrollbar="true">
 				<view class="goods-box" v-for="item in productList" :key="index">
-					<navigator>
+					<navigator url="../product-detail/product-detail">
 						<image src="" style="width:262rpx ;height: 244rpx;" mode="aspectFit"></image>
 					</navigator>
 					<view class="goods-price">¥{{ item.originalPrice }}</view>
@@ -102,7 +102,7 @@
 			<view class="recommend-list">
 
 				<view v-for="(item, index) in productList" :key="index">
-					<navigator url="">
+					<navigator url="../product-detail/product-detail">
 						<view class="uni-product">
 							<view class="image-view">
 								<!-- <image v-if="renderImage" class="uni-product-image" :src="item.image"></image></view> -->
@@ -131,7 +131,7 @@
 			</view>
 			<view class="recommend-ruler">
 				<view class="uni-ruler" v-for="(item, index) in productList" :key="index">
-					<navigator url="">
+					<navigator url="../product-detail/product-detail">
 						<view class="image-ruler">
 							<!-- <image v-if="renderImage" class="uni-product-image" :src="item.image"></image></view> -->
 							<image src="" style="width:330rpx ;height: 350rpx;" mode="aspectFit"></image>

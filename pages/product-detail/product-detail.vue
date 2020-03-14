@@ -10,25 +10,98 @@
 			<view class="beij">
 				<text style="color: #e33944;font-size: 24rpx;">¥</text>
 				<text style="color: #e33944;">488</text>
-				<text style="color: #A1A4A5;font-size: 28rpx;">¥588</text>
+				<view style="color: #A1A4A5;font-size: 28rpx;" class="origin-price">¥588</view>
 			</view>
-			<view>
+			<view class="beij">
 				<text style="color: #A1A4A5;font-size: 28rpx;">已售277</text>
-				<text style="color: #A1A4A5;font-size: 28rpx;">库存59</text>
+				<view style="color: #A1A4A5;font-size: 28rpx;" class="save">库存59</view>
 			</view>
 		</view>
-
+		<!-- title -->
 		<view class="product-title">
-			<text
-				style="font-size: 30rpx;
-	color: #333333;"
-			>
-				一年级上册第一课《秋天》课文配套书法尺学习尺子
-			</text>
-			<button class="btn-share" size="mini">分享</button>
+			<view class="productTxt">
+				<text
+					style="font-size: 30rpx;
+	color: #333333;font-weight: bolder;"
+				>
+					一年级上册第一课《秋天》课文配套书法学习尺子
+				</text>
+			</view>
+
+			<navigator class="btn-share">
+				<image src="../../static/onlineStore/share.png" style="width:30rpx ;height: 28rpx;"></image>
+				<text style="color:#b3b3b3;font-size: 28rpx;">分享</text>
+			</navigator>
 		</view>
 		<!-- 优惠券 -->
-		<view></view>
+		<navigator class="youhuiquan" url="">
+			<view><text style="color: #666666;font-size:26rpx ;">优惠券</text></view>
+			<navigator url="">
+				<text style="color: #666666;font-size:26rpx ;">领取优惠券</text>
+				<image src="../../static/onlineStore/go%20(1).png" style="width: 16rpx;height: 24rpx;"></image>
+			</navigator>
+		</navigator>
+		<!-- 售后售前 -->
+		<navigator class="pre-sale">
+			<view class="pre-detail">
+				<image src="../../static/onlineStore/right.png" style="width:28rpx ;height: 28rpx;"></image>
+				<view class="jisu">全场包邮</view>
+			</view>
+			<view class="pre-detail">
+				<image src="../../static/onlineStore/right.png" style="width:28rpx ;height: 28rpx;"></image>
+				<view class="jisu">极速发货</view>
+			</view>
+			<view class="pre-detail">
+				<image src="../../static/onlineStore/right.png" style="width:28rpx ;height: 28rpx;"></image>
+				<view class="jisu">七天无理由退换</view>
+			</view>
+			<view style="margin-left:120rpx ;"><image src="../../static/onlineStore/go%20(1).png" style="width: 16rpx;height: 24rpx;"></image></view>
+		</navigator>
+		<!-- 地址 -->
+		<navigator url="" class="address">
+			<view class="txt-address">地址</view>
+			<view class="choose-address">选择收货地址</view>
+			<view style="margin-left: 376rpx;"><image src="../../static/onlineStore/go%20(1).png" style="width: 16rpx;height: 24rpx;"></image></view>
+		</navigator>
+		<navigator url="" class="address">
+			<view class="txt-address">参数</view>
+			<view class="choose-address">生产日期 年级 （一年级）</view>
+			<view style="margin-left: 376rpx;"><image src="../../static/onlineStore/go%20(1).png" style="width: 16rpx;height: 24rpx;"></image></view>
+		</navigator>
+		<navigator url="" class="comment">
+			<view class="choose-address">评价(999+)</view>
+			<view>
+				<text style="color: #A1A4A5;font-size: 28rpx;">查看全部</text>
+				<image src="../../static/onlineStore/go%20(1).png" style="width: 16rpx;height: 24rpx;"></image>
+			</view>
+		</navigator>
+		<view class="pic-txt-detail">
+			<view>图文详情</view>
+			<view >
+				<image src="" width="750rpx;height:1140rpx"></image>
+			</view>
+			</view>
+		<!-- 加入购物车  固定-->
+		<view class="oprate">
+			<view class="oprate-content">
+				<navigator url="" class="oprate-icon">
+					<image src="../../static/onlineStore/kf.png" style="width: 36rpx;height: 34rpx;"></image>
+					<view class="oprate-txt">客服</view>
+				</navigator>
+				<navigator url="" class="oprate-icon">
+					<image src="../../static/onlineStore/gwc.png" style="width: 36rpx;height: 34rpx;"></image>
+					<view class="oprate-txt">购物车</view>
+				</navigator>
+				<navigator url="" class="oprate-icon">
+					<image src="../../static/onlineStore/sc.png" style="width: 36rpx;height: 34rpx;"></image>
+					<view class="oprate-txt">收藏</view>
+				</navigator>
+				<view>
+					<button size="mini" class="bth-gwc">加入购物车</button>
+					<button size="mini" class="btn-fastbuy">立即购买</button>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -36,11 +109,13 @@
 export default {
 	data() {
 		return {
-			swiperImages: []
+			swiperImages: true
 		};
 	},
 	methods: {}
 };
 </script>
 
-<style></style>
+<style>
+@import './product-detail.css';
+</style>
