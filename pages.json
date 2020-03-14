@@ -415,6 +415,33 @@
            	}
            }
         }
+        ,{
+            "path" : "pages/brain/brain",
+            "style": {
+				"navigationStyle":"custom"
+			}
+        }
+        ,{
+            "path" : "pages/brain/poetry/poetry",
+            "style": {
+				"navigationStyle":"custom",
+				"navigationBarTextStyle": ""
+			}
+        }
+        ,{
+            "path" : "pages/brain/choice/choice",
+            "style": {
+				"navigationStyle":"custom",
+				"navigationBarTextStyle": ""
+			}
+        }
+        ,{
+            "path" : "pages/brain/fillBlanks/fillBlanks",
+            "style": {
+				"navigationStyle":"custom",
+				"navigationBarTextStyle": ""
+			}
+        }
     ],
 
 
