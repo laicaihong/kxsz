@@ -1,0 +1,29 @@
+.about_page {
+  padding: 70rpx 44rpx 0;
+}
+.title {
+  margin-top: 88rpx;
+  margin-bottom: 32rpx;
+  font-size: 30rpx;
+  color: #3e3d3d;
+  line-height: 38rpx;
+}
+.p {
+  position: relative;
+  padding-left: 28rpx;
+  margin-bottom: 34rpx;
+  font-size: 28rpx;
+  color: #3e3d3d;
+  line-height: 38rpx;
+}
+.p::before {
+  position: absolute;
+  top: 12rpx;
+  left: 0;
+  width: 16rpx;
+  height: 16rpx;
+  background-color: #585858;
+  content: '';
+  border-radius: 50%;
+}
+

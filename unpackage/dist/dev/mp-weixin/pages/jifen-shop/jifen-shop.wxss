@@ -1,0 +1,77 @@
+.banner{
+	width: 750rpx;
+	height: 260rpx;
+	background-color: #EBEEF5;
+}
+.jifen{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding: 28rpx;
+}
+.jifenTxt{
+	margin-left: 32rpx;
+}
+.product-hot{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	padding: 0 30rpx 0 60rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	margin-top: 68rpx;
+}
+.uni-product{
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	margin-bottom: 10rpx;
+}
+.uni-product-title{
+	color: #333333;
+	font-size: 28rpx;
+	padding-bottom: 6rpx;
+}
+.title{
+	text-align: center;
+}
+.goods-price{
+	color: #f7b500;
+	font-size: 22rpx;
+}
+.goods-detail{
+	padding: 30rpx 0;
+}
+.uni-product-price{
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	width:282rpx;
+}
+.image-view{
+	text-align: center;
+}
+

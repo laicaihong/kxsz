@@ -1,0 +1,1 @@
+<view class="wrap"><block wx:for="{{dataList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><navigator class="item" url="/pages/my/activeCode/activeCode?cl_id=item.cl_id">{{item.title}}</navigator></block></view>

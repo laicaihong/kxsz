@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "教材同步学习教学",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}
