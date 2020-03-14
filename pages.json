@@ -408,10 +408,9 @@
         ,{
             "path" : "pages/product-detail/product-detail",
            "style": {
-           	"navigationBarBackgroundColor":"#FFFFFF",
-           	"navigationBarTextStyle":"black",
-           	"app-plus":{
-           		
+           	"navigationStyle": "custom",
+           	"app-plus": {
+           		"titleNView": false
            	}
            }
         }

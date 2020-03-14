@@ -1,11 +1,31 @@
 <template>
 	<view>
-		<view class="product-bar">
-			<button></button>
-			<button></button>
-		</view>
+			<view class="top_title">
+				<navigator url="../index/index"><image src="../../static/onlineStore/back.png" mode="" style="width: 18rpx;height: 32rpx;"></image></navigator>
+				<navigator url=""><image src="../../static/index/gwc.png" mode="" style="width: 44rpx;height: 44rpx;"></image></navigator>
+			</view>
 		<!-- 商品详情 -->
-		<view class="product-banner"><image src="" style="width: 750rpx;height: 650rpx;" mode="aspectFit"></image></view>
+		<view class="product-banner">
+			<swiper>
+				
+			</swiper>
+			<image src="" style="width: 750rpx;height: 650rpx;" mode="aspectFit"></image>
+			</view>
+		<!-- 限时秒杀 判断商品是否为秒杀商品-->
+		<view class="xsms" v-if="true">
+			<view class="back-red">
+				<view class="back-red-txt">
+					<text style="color: #ffffff;font-size: 32rpx;">¥</text>
+					<text style="color: #ffffff;font-size: 52rpx;">56</text>
+					<view style="color: #E5E5E5;font-size: 24rpx;" class="origin-price">¥88.00</view>
+				</view>
+				<view class="cheap">已抢227件</view>
+			</view>
+			<view class="back-yello"> 
+			<text style="color: #E44A54;font-size: 32rpx;">距结束</text>
+			<uni-countdown backgroundColor="#F3F15B" color='#e44a54' splitorColor='#e44a54' :hour="1" :minute="12" :second="40" :showDay="false"></uni-countdown>
+			</view>
+		</view>
 		<view class="product-detail">
 			<view class="beij">
 				<text style="color: #e33944;font-size: 24rpx;">¥</text>
@@ -77,10 +97,8 @@
 		</navigator>
 		<view class="pic-txt-detail">
 			<view>图文详情</view>
-			<view >
-				<image src="" width="750rpx;height:1140rpx"></image>
-			</view>
-			</view>
+			<view><image src="" width="750rpx;height:1140rpx"></image></view>
+		</view>
 		<!-- 加入购物车  固定-->
 		<view class="oprate">
 			<view class="oprate-content">
