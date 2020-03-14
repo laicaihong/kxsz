@@ -10,23 +10,23 @@
 	padding: 10rpx 20rpx;
 }
 .recommend-header{
-	margin-left: 16rpx;
 	margin-right: 16rpx;
 }
 .banner {
 	border-radius: 8rpx;
+
 }
 .recommend-footer{
 	margin: 0 26rpx;
 }
 .new-goods {
-	height: 194rpx;
 	display: flex;
 	align-items: center;
+	margin: 50rpx 16rpx 12rpx;
 }
 
 .limitedTime {
-	height: 194rpx;
+	margin: 70rpx 16rpx 16rpx 40rpx;
 	display: flex;
 	align-items: center;
 		justify-content: space-between;
@@ -36,7 +36,7 @@
 	height: 358rpx;
 }
 .swiper-item {
-	width: 718rpx;
+	width: 100%;
 	height: 332rpx;
 }
 .uni-tab-bar {
@@ -69,13 +69,15 @@
 	text-align: center;
 }
 .recommend-product{
-	width:400rpx
+	width:58%;
+	/*overflow: hidden;*/
+	/*text-overflow:ellipsis;*/
+	/*white-space: nowrap;*/
 }
 .recommend-banner {
 	width: 100%;
 	overflow: hidden;
 	white-space: nowrap;
-	background-color: #FFFFFF;
 }
 
 .uni-product {
@@ -88,7 +90,7 @@
 .uni-product-title {
 	color: #333333;
 	font-size: 32rpx;
-	font-weight: bolder;
+	font-weight: 400;
 }
 .uni-product-price{
 	display: flex;
@@ -97,7 +99,7 @@
 	padding-right: 20rpx;
 }
 .goods-detail {
-	padding-left:18rpx;
+	margin-top: 20rpx;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -115,6 +117,7 @@
 	border: 1px solid #E02020;
 	padding: 2rpx 6rpx;
 	border-radius: 8rpx;
+	margin: 0 18rpx 0 22rpx;
 }
 
 .recommend-image {
@@ -124,6 +127,7 @@
 
 .goods-adverse {
 	background-color: #EBEEF5;
+	height: 220rpx;
 }
 
 .goods-price {
@@ -164,8 +168,8 @@
 	padding-bottom: 10rpx;
 }
 .active .swiper-tab-line {
-	border-bottom: 6upx solid #E02020;
-	width: 22px;
-	margin: auto;
-	border-top: 6upx solid #E02020;
+	width:22rpx;
+	height:10rpx;
+	background:rgba(224,32,32,1);
+	margin: 4rpx auto 0;
 }

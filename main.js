@@ -2,6 +2,9 @@ import Vue from 'vue'
 import App from './App'
 Vue.config.productionTip = false
 
+// 引入公有css
+import './static/globle.less';
+
 App.mpType = 'app'
 
 const app = new Vue({
